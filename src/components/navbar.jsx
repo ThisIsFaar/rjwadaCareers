@@ -4,7 +4,7 @@ const Navbar = () => {
       <a href="#" className="flex items-center">
         <div className="container flex flex-col flex-wrap justify-center items-center mx-auto">
           <img
-            src="http://www.rjwada.com/static/media/rjwada_logo.d5406ae984211241e3c0dcd39f9de14d.svg"
+            src="https://i.postimg.cc/KYWHDJWV/rjwada-logo-d5406ae984211241e3c0dcd39f9de14d.png"
             className="mr-3 h-6 sm:h-10"
             alt="Flowbite Logo"
           />
