@@ -1,18 +1,18 @@
 const Navbar = () => {
   return (
-    <nav className="p-3 bg-white-900">
-      <div className="container flex flex-wrap justify-center items-center mx-auto">
-        <a href="#" className="flex items-center">
+    <nav className="p-3 bg-white-900 border-b">
+      <a href="#" className="flex items-center">
+        <div className="container flex flex-col flex-wrap justify-center items-center mx-auto">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
+            src="http://www.rjwada.com/static/media/rjwada_logo.d5406ae984211241e3c0dcd39f9de14d.svg"
             className="mr-3 h-6 sm:h-10"
             alt="Flowbite Logo"
           />
-          <span className="text-xl font-semibold text-blue-400">
+          <div className="text-xl font-semibold " style={{ color: '#0d99ff' }}>
             Jobs at Rjwada
-          </span>
-        </a>
-      </div>
+          </div>
+        </div>
+      </a>
     </nav>
   );
 };

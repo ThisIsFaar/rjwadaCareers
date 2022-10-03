@@ -1,22 +1,21 @@
-const JobCard = () => {
+const JobCard = ({ job }) => {
   return (
-    <div class="block rounded-lg w-80 m-6 shadow-lg bg-white  text-center">
+    <div class="block rounded-lg w-96 m-6 shadow-lg bg-white  text-center">
       <div class="p-4 border-b text-gray-900 text-xl font-medium mb-2">
-        NodeJs Developer
+        {job.title}
       </div>
       <div>
         <label className="text-gray-500 text-xs font-medium mb-2">
           location:{' '}
         </label>
         <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">
-          Gurgaon
+          {job.location}
         </span>
       </div>
 
       <div class="p-6">
-        <p class="text-gray-700 text-base mb-4">
-          A Detailed Description With supporting text below as a natural lead-in
-          to additional content.
+        <p class="text-gray-700 text-base mb-4 max-h-60 overflow-auto">
+          {job.description}
         </p>
         <div class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 mb-4">
           <svg
@@ -32,19 +31,19 @@ const JobCard = () => {
               clip-rule="evenodd"
             ></path>
           </svg>
-          Posted 2 days ago
+          Posted {job.postedDays} days ago
         </div>
         <div className="">
           <label className="text-gray-500 text-xs font-medium mb-2">
             Experience :{' '}
           </label>
           <span class="bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-pink-200 dark:text-pink-900">
-            0-5years
+            {job.experienceRequired}
           </span>
         </div>
         <label className="text-gray-500 text-xs font-medium ">
           Role :{' '}
-          <span className="text-gray-900 text-xs font-medium ">Full-Time</span>
+          <span className="text-gray-900 text-xs font-medium ">{job.role}</span>
         </label>
 
         <div className="mt-6">
